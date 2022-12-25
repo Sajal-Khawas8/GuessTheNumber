@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="gameArea">
+            <div id="main">
+                <h2>Guess the Number</h2>
+                <p>Select The Difficulty</p>
+                <button id="easy">Easy</button>
+                <button id="medium">Medium</button>
+                <button id="hard">Hard</button>
+            </div>
+            <div id="game">
+                <p id="question"></p>
+                <p id="low-high"></p>
+                <p id="yourGuess">Your Guess</p>
+                <input type="number" name="guess" id="userGuess" placeholder="Enter Your Guess">
+                <div class="stats">
+                    <div class="info">
+                        <p>Attempts Left: </p>
+                        <span id="attempts"></span>
+                    </div>
+                    <div class="info">
+                        <p>Previous Guesses: </p>
+                        <span id="guesses"></span>
+                    </div>
+                </div>
+                <button id="newGame">New Game</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

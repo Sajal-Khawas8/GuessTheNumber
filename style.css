@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(142, 215, 142);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameArea {
+    height: 75vh;
+    width: 85vh;
+    background-color: rgb(162, 225, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* display: none; */
+}
+
+#main>h2 {
+    font-size: 4rem;
+    font-family: 'Teko', sans-serif;
+    color: #bf6437;
+    margin: 10px 0px;
+}
+
+#main>p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    color: #170d56;
+    margin: 15px 0px;
+}
+
+button {
+    height: 10vh;
+    width: 30vh;
+    margin: 20px 0px;
+    border: 2px solid #5e871e;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+    background-color: #8fed8f;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(110%);
+    background-color: #45aa45;
+    transition: all 0.5s;
+}
+
+#game {
+    /* height: 100%; */
+    text-align: center;
+    display: none;
+}
+
+#question {
+    font-size: 2.3rem;
+    font-family: 'Teko', sans-serif;
+    color: #170d56;
+    margin: 20px 0px 30px 0px;
+}
+
+#yourGuess,
+#low-high {
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+    color: black;
+}
+
+#low-high {
+    margin: 17px 0px 25px 0px;
+}
+
+#userGuess {
+    height: 8vh;
+    width: 30vh;
+    margin: 16px 0px;
+    border: 2px solid #5e871e;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-family: 'Teko', sans-serif;
+    background-color: #8fed8f;
+    text-align: center;
+}
+
+.info {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: 'Teko', sans-serif;
+}
+
+.info>span {
+    color: red;
+    font-weight: bold;
+}
+
+#newGame {
+    height: 8vh;
+    margin: 10px 0px;
+    display: none;
+}
+
+/*-------Responsive-------*/
+@media only screen and (max-width:850px) {
+    .gameArea {
+        height: 85vh;
+        width: 85vw;
+    }
+
+    #main>h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #main>p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #question {
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px 0px 15px 0px;
+    }
+
+    #status,
+    #low-high {
+        font-size: 1.8rem;
+        margin: 30px 0px 10px 0px;
+    }
+
+    #low-high {
+        margin: 35px 0px 10px 0px;
+    }
+
+    #userGuess {
+        margin: 5px 0px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        margin: 8px 0px;
+    }
+
+    .info>span {
+        margin-top: 15px;
+    }
+
+    #newGame {
+        height: 8vh;
+    }
+}
