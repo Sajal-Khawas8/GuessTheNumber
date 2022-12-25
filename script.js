@@ -67,14 +67,14 @@ userGuess.addEventListener("change", () => {
     else if (attemptsLeft === 1) {
         if (userNumber > computerGuess) {
             wrongSound.play();
-            document.getElementById("low-high").innerHTML = `Your guess is High!! You Loose 😵‍💫<br>Correct Number was ${computerGuess}`;
+            document.getElementById("low-high").innerHTML = `Your guess is High!! You Loose 😵<br>Correct Number was ${computerGuess}`;
             newGame.style.display = "inline";
             document.getElementById("userGuess").setAttribute("disabled", true);
             updateValues();
         }
         else if (userNumber < computerGuess) {
             wrongSound.play();
-            document.getElementById("low-high").innerHTML = `Your guess is Low!! You Loose 😵‍💫<br>Correct Number was ${computerGuess}`;
+            document.getElementById("low-high").innerHTML = `Your guess is Low!! You Loose 😵<br>Correct Number was ${computerGuess}`;
             newGame.style.display = "inline";
             document.getElementById("userGuess").setAttribute("disabled", true);
             updateValues();
