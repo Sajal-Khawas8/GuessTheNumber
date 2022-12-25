@@ -1,6 +1,6 @@
-let clickSound = new Audio("../click.mp3");
-let correctSound = new Audio("../correct.mp3");
-let wrongSound = new Audio("../wrong.mp3");
+let clickSound = new Audio("./click.mp3");
+let correctSound = new Audio("./correct.mp3");
+let wrongSound = new Audio("./wrong.mp3");
 let easy = document.getElementById("easy");
 let medium = document.getElementById("medium");
 let hard = document.getElementById("hard");
