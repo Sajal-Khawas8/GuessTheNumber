@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Teko', sans-serif;
 }
 
 .container {
@@ -29,18 +30,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* display: none; */
 }
 
 #main>h2 {
     font-size: 4rem;
-    font-family: 'Teko', sans-serif;
     color: #bf6437;
     margin: 10px 0px;
 }
 
 #main>p {
-    font-family: 'Teko', sans-serif;
     font-size: 2.5rem;
     color: #170d56;
     margin: 15px 0px;
@@ -53,7 +51,6 @@ button {
     border: 2px solid #5e871e;
     border-radius: 25px;
     font-size: 2rem;
-    font-family: 'Teko', sans-serif;
     background-color: #8fed8f;
     cursor: pointer;
 }
@@ -65,14 +62,12 @@ button:hover {
 }
 
 #game {
-    /* height: 100%; */
     text-align: center;
     display: none;
 }
 
 #question {
     font-size: 2.3rem;
-    font-family: 'Teko', sans-serif;
     color: #170d56;
     margin: 20px 0px 30px 0px;
 }
@@ -80,7 +75,6 @@ button:hover {
 #yourGuess,
 #low-high {
     font-size: 2rem;
-    font-family: 'Teko', sans-serif;
     color: black;
 }
 
@@ -95,7 +89,6 @@ button:hover {
     border: 2px solid #5e871e;
     border-radius: 15px;
     font-size: 1.4rem;
-    font-family: 'Teko', sans-serif;
     background-color: #8fed8f;
     text-align: center;
 }
@@ -105,7 +98,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
-    font-family: 'Teko', sans-serif;
 }
 
 .info>span {
